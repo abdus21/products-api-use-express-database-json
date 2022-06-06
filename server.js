@@ -3,11 +3,10 @@ const path = require('path')
 const app = express();
 const dotenv = require('dotenv');
 const { authCheck } = require('./middleware/authMiddleware');
-const connetMongoDB = require('./config/db');
+
 const colors = require('colors')
 
-// mongo DB connetcion init
-connetMongoDB();
+
 
 
 dotenv.config();
